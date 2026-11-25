@@ -1,0 +1,95 @@
+{
+  "audited_utc": "2026-11-24T11:41:10.808383+00:00",
+  "policy": "Exclude a named new release when a primary training-data disclosure includes FreshRetailNet; do not infer training membership from an evaluation-only mention. Retain incomplete provenance as unverified.",
+  "entries": [
+    {
+      "method": "t0-gamma",
+      "repo": "theforecastingcompany/t0-gamma",
+      "revision": "fef67abad3eed4f227c7b536a6e8ee4e9ab1080d",
+      "decision": "admitted-pretraining-unverified",
+      "ranked": true,
+      "dwabi_member": true,
+      "primary_source_url": "https://huggingface.co/theforecastingcompany/t0-gamma/blob/fef67abad3eed4f227c7b536a6e8ee4e9ab1080d/README.md",
+      "reference_card": "ref/foundation-additions-20261124/theforecastingcompany__t0-gamma/files/README.md",
+      "card_sha256": "145f63f6e502a681d16f57442875ad7a3dc00dd8ab2221c957303037f0a74b73",
+      "freshretail_mentions": [],
+      "basis": "No FreshRetailNet training disclosure found in the studied pinned model card, native source and available paper. Disclosure is incomplete, so overlap remains unverified; absence of a name is not proof of absence. The paper documents t0-alpha training in detail; it does not supply an equivalent complete beta/gamma corpus inventory.",
+      "claim_limit": "This is a disclosure audit, not a dataset-level proof of pretraining independence.",
+      "paper": {
+        "file": "ref/foundation-additions-20261124/t0-2609.24559.pdf",
+        "sha256": "e23720637cc9e2409620d5ecc7658fe57d0c897dd53814a75f933a7a6dff5757"
+      }
+    },
+    {
+      "method": "t0-beta",
+      "repo": "theforecastingcompany/t0-beta",
+      "revision": "941e522547ec63f0f2aad57089fa0f5b8498bdf8",
+      "decision": "admitted-pretraining-unverified",
+      "ranked": true,
+      "dwabi_member": true,
+      "primary_source_url": "https://huggingface.co/theforecastingcompany/t0-beta/blob/941e522547ec63f0f2aad57089fa0f5b8498bdf8/README.md",
+      "reference_card": "ref/foundation-additions-20261124/theforecastingcompany__t0-beta/files/README.md",
+      "card_sha256": "f99db2c82302e081bc3c9a3b71a6f066df10a89702897b2c0c9bfe48a13d6220",
+      "freshretail_mentions": [],
+      "basis": "No FreshRetailNet training disclosure found in the studied pinned model card, native source and available paper. Disclosure is incomplete, so overlap remains unverified; absence of a name is not proof of absence. The paper documents t0-alpha training in detail; it does not supply an equivalent complete beta/gamma corpus inventory.",
+      "claim_limit": "This is a disclosure audit, not a dataset-level proof of pretraining independence.",
+      "paper": {
+        "file": "ref/foundation-additions-20261124/t0-2609.24559.pdf",
+        "sha256": "e23720637cc9e2409620d5ecc7658fe57d0c897dd53814a75f933a7a6dff5757"
+      }
+    },
+    {
+      "method": "timestral-209m",
+      "repo": "mistralai/Timestral-209M",
+      "revision": "9874d252ab0aae16f7f7c999f98f98d6ad7d8365",
+      "decision": "admitted-pretraining-unverified",
+      "ranked": true,
+      "dwabi_member": true,
+      "primary_source_url": "https://huggingface.co/mistralai/Timestral-209M/blob/9874d252ab0aae16f7f7c999f98f98d6ad7d8365/README.md",
+      "reference_card": "ref/foundation-additions-20261124/mistralai__Timestral-209M/files/README.md",
+      "card_sha256": "f85a2083f1bbb039b3fde4dfd0426ef5af3c1d9ee4cfb4afc3be742336ba64d5",
+      "freshretail_mentions": [],
+      "basis": "No FreshRetailNet training disclosure found in the studied pinned model card, native source and available paper. Disclosure is incomplete, so overlap remains unverified; absence of a name is not proof of absence. The paper describes synthetic pretraining and real/synthetic post-training without identifying the complete real-data corpus.",
+      "claim_limit": "This is a disclosure audit, not a dataset-level proof of pretraining independence.",
+      "paper": {
+        "file": "ref/foundation-additions-20261124/timestral-2610.37585.pdf",
+        "sha256": "1dc50fa5783a0c18073af041192325a59eb0af3a9e9860ebcaa887c7f0280b29"
+      }
+    },
+    {
+      "method": "ciproto",
+      "repo": "ContinuousIntelligence/ci-proto",
+      "revision": "ee3031351a151e3f6febf8c62b53e6ea1008bef6",
+      "decision": "admitted-pretraining-unverified",
+      "ranked": true,
+      "dwabi_member": true,
+      "primary_source_url": "https://huggingface.co/ContinuousIntelligence/ci-proto/blob/ee3031351a151e3f6febf8c62b53e6ea1008bef6/README.md",
+      "reference_card": "ref/foundation-additions-20261124/ContinuousIntelligence__ci-proto/files/README.md",
+      "card_sha256": "68e671a072b8ecbc064d6f64316f1315d4728d8fac7e6860115ee55a3b9e29e0",
+      "freshretail_mentions": [],
+      "basis": "No FreshRetailNet training disclosure found in the studied pinned model card, native source and available paper. Disclosure is incomplete, so overlap remains unverified; absence of a name is not proof of absence. The card describes a large real/synthetic corpus without a source inventory.",
+      "claim_limit": "This is a disclosure audit, not a dataset-level proof of pretraining independence."
+    },
+    {
+      "method": "timeh2o-v1",
+      "repo": "h2oai/timeh2o-v1",
+      "revision": "1310be782553943a4c520d2810a98ce8f56b2709",
+      "decision": "excluded-disclosed-training-overlap",
+      "ranked": false,
+      "dwabi_member": false,
+      "primary_source_url": "https://huggingface.co/h2oai/timeh2o-v1/blob/1310be782553943a4c520d2810a98ce8f56b2709/README.md",
+      "reference_card": "ref/foundation-additions-20261124/h2oai__timeh2o-v1/files/README.md",
+      "card_sha256": "dd1f95dbaa223826fdb47e9d7003841a31c1b5e797505b84197e21ce7c2f7692",
+      "freshretail_mentions": [
+        {
+          "line": 112,
+          "text": "- [Dingdong-Inc/FreshRetailNet-LT](https://huggingface.co/datasets/Dingdong-Inc/FreshRetailNet-LT) (CC-BY 4.0)"
+        }
+      ],
+      "basis": "The pinned Training Data section explicitly lists Dingdong-Inc/FreshRetailNet-LT.",
+      "claim_limit": "This is a disclosure audit, not a dataset-level proof of pretraining independence."
+    }
+  ],
+  "downloads_root": "/mnt/g/freelance/FreshRetailNet-LT/ref/foundation-additions-20261124",
+  "dwabi_source": "6f8db125341cc8a2454d1e11a561bf5a7b7f4662"
+}

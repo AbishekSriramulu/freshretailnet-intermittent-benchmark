@@ -1,0 +1,215 @@
+{
+  "protocol": "frn-intermittent-v2",
+  "analysis": "Descriptive original observed slots; no model forecasts or test targets",
+  "start_inclusive": "2024-10-28",
+  "end_inclusive": "2025-01-19",
+  "parents": 4538,
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.8"
+  },
+  "weighting": "Pooled original observed slots; missing values excluded, stockout sales retained",
+  "source_pins": {
+    "scripts/plot_intermittent_v2_training.py": "6354ae6379c47712dbc524c7f8ceacb99ad7982c18d349fef6a6d707cc2bc585",
+    "reports/intermittent-v2/data-audit.json": "1569495b9a3a4f3a6369fa0d8f12bc6da701d2db3f7a506cbba89c11dbdace95",
+    "data/cohorts/intermittent-v2/core.parquet": "af4e8fa4dcfbcbd5de98044bb7ce012415bffed49b1409c986c004c141cbab5f",
+    "reports/intermittent-v2/profiles-hourly-24.parquet": "684a09133dc0a8077f82bdda568a1f6df3767e7a02875707a547b14698a3a257"
+  },
+  "hours": [
+    {
+      "hour": 0,
+      "observed": 380273,
+      "zeros": 341292,
+      "sales_sum": 4973.299999999925,
+      "mean_sales": 0.013078235898946085,
+      "zero_fraction": 0.8974920649112611
+    },
+    {
+      "hour": 1,
+      "observed": 380273,
+      "zeros": 355120,
+      "sales_sum": 3109.3999999999883,
+      "mean_sales": 0.008176757224415061,
+      "zero_fraction": 0.933855414399655
+    },
+    {
+      "hour": 2,
+      "observed": 380273,
+      "zeros": 364747,
+      "sales_sum": 1904.100000000012,
+      "mean_sales": 0.005007192201392189,
+      "zero_fraction": 0.9591714373621056
+    },
+    {
+      "hour": 3,
+      "observed": 380273,
+      "zeros": 369259,
+      "sales_sum": 1342.8000000000059,
+      "mean_sales": 0.003531147359923018,
+      "zero_fraction": 0.9710365973918738
+    },
+    {
+      "hour": 4,
+      "observed": 380273,
+      "zeros": 369983,
+      "sales_sum": 1304.5000000000043,
+      "mean_sales": 0.0034304302435355766,
+      "zero_fraction": 0.9729404927512603
+    },
+    {
+      "hour": 5,
+      "observed": 380273,
+      "zeros": 360217,
+      "sales_sum": 2611.100000000003,
+      "mean_sales": 0.006866382835489249,
+      "zero_fraction": 0.9472589429173252
+    },
+    {
+      "hour": 6,
+      "observed": 380273,
+      "zeros": 320484,
+      "sales_sum": 8659.89999999985,
+      "mean_sales": 0.0227728500314244,
+      "zero_fraction": 0.8427734811569583
+    },
+    {
+      "hour": 7,
+      "observed": 380273,
+      "zeros": 253205,
+      "sales_sum": 21555.000000000866,
+      "mean_sales": 0.05668296197731857,
+      "zero_fraction": 0.6658505862893237
+    },
+    {
+      "hour": 8,
+      "observed": 380273,
+      "zeros": 191711,
+      "sales_sum": 38450.300000001305,
+      "mean_sales": 0.10111235875279419,
+      "zero_fraction": 0.5041404464687211
+    },
+    {
+      "hour": 9,
+      "observed": 380273,
+      "zeros": 162857,
+      "sales_sum": 50288.6999999996,
+      "mean_sales": 0.13224367756848263,
+      "zero_fraction": 0.42826337920388774
+    },
+    {
+      "hour": 10,
+      "observed": 380273,
+      "zeros": 159616,
+      "sales_sum": 51914.99999999942,
+      "mean_sales": 0.13652034196485002,
+      "zero_fraction": 0.4197405548119377
+    },
+    {
+      "hour": 11,
+      "observed": 380273,
+      "zeros": 187507,
+      "sales_sum": 39705.900000001166,
+      "mean_sales": 0.1044141971688791,
+      "zero_fraction": 0.4930852308736092
+    },
+    {
+      "hour": 12,
+      "observed": 380273,
+      "zeros": 218197,
+      "sales_sum": 29128.000000001535,
+      "mean_sales": 0.07659760224891468,
+      "zero_fraction": 0.5737904084697046
+    },
+    {
+      "hour": 13,
+      "observed": 380273,
+      "zeros": 228033,
+      "sales_sum": 26267.800000001334,
+      "mean_sales": 0.06907616370344814,
+      "zero_fraction": 0.5996560365842434
+    },
+    {
+      "hour": 14,
+      "observed": 380273,
+      "zeros": 209299,
+      "sales_sum": 31015.400000001613,
+      "mean_sales": 0.08156087863193447,
+      "zero_fraction": 0.5503914293152551
+    },
+    {
+      "hour": 15,
+      "observed": 380273,
+      "zeros": 175655,
+      "sales_sum": 42629.50000000075,
+      "mean_sales": 0.1121023580427765,
+      "zero_fraction": 0.46191814827768474
+    },
+    {
+      "hour": 16,
+      "observed": 380273,
+      "zeros": 163016,
+      "sales_sum": 50079.19999999969,
+      "mean_sales": 0.13169275757153331,
+      "zero_fraction": 0.42868149986983034
+    },
+    {
+      "hour": 17,
+      "observed": 380273,
+      "zeros": 200394,
+      "sales_sum": 37555.700000001176,
+      "mean_sales": 0.09875983832667892,
+      "zero_fraction": 0.5269740423327451
+    },
+    {
+      "hour": 18,
+      "observed": 380273,
+      "zeros": 251899,
+      "sales_sum": 22253.251000000815,
+      "mean_sales": 0.058519145456029785,
+      "zero_fraction": 0.6624162115112038
+    },
+    {
+      "hour": 19,
+      "observed": 380273,
+      "zeros": 273036,
+      "sales_sum": 17035.493000000388,
+      "mean_sales": 0.04479806086679935,
+      "zero_fraction": 0.7179999631843439
+    },
+    {
+      "hour": 20,
+      "observed": 380273,
+      "zeros": 289068,
+      "sales_sum": 14485.500000000233,
+      "mean_sales": 0.03809237048120753,
+      "zero_fraction": 0.7601591488220305
+    },
+    {
+      "hour": 21,
+      "observed": 380273,
+      "zeros": 312006,
+      "sales_sum": 9554.899999999838,
+      "mean_sales": 0.02512642233342845,
+      "zero_fraction": 0.8204789716861307
+    },
+    {
+      "hour": 22,
+      "observed": 380273,
+      "zeros": 329605,
+      "sales_sum": 6590.899999999857,
+      "mean_sales": 0.017332021994724466,
+      "zero_fraction": 0.8667588811196167
+    },
+    {
+      "hour": 23,
+      "observed": 380273,
+      "zeros": 351386,
+      "sales_sum": 3527.7999999999724,
+      "mean_sales": 0.009277019404480393,
+      "zero_fraction": 0.9240361529743105
+    }
+  ],
+  "figure_path": "reports/intermittent-v2/figures/training-hour-profile.png",
+  "figure_sha256": "480e7bb792ab693e41dc65576a7e0f2054a9873c455c70645bf0498eac57ce89"
+}

@@ -1,0 +1,21 @@
+{
+  "required": 70000,
+  "metrics": {
+    "sample_cnt": 35785,
+    "wape": 0.3306632940648926,
+    "wpe": -0.049552758158789775,
+    "mae": 0.6369502305435238,
+    "mse": 0.9253907469610171
+  },
+  "oracle_metrics": {
+    "sample_cnt": 35785,
+    "wape": 0.3306632940648926,
+    "wpe": -0.049552758158789775,
+    "mae": 0.6369502305435238,
+    "mse": 0.9253907469610171
+  },
+  "prediction_sha256": "bc7c5a30c528a63fe863bfac2d8d78fdaee09b8340fa698bc0ca312e84e8bca7",
+  "oracle_sha256": "20021642c9062a7ed253cb30415b1389d354acff78ddc56a859ac889ec481bad",
+  "passed": true,
+  "claim": "Exact scorer parity on the full original population; not a trained baseline reproduction"
+}
