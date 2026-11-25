@@ -6,7 +6,7 @@ An evolving comparison of foundation and fitted forecasting models on recorded r
 
 The site reports RMSSE and finite-decile CRPS-9 separately. Intermittency and sparsity filters use only the 84 days before testing. Recorded zeros and stockout sales remain observations. The Original FreshRetailNet-LT protocol is available through the footer.
 
-The study is in progress. Only complete, checked participant/task results receive scores; pending methods remain unranked. The visible snapshot time identifies the current exported measurements. Pretraining exposure, supported covariates, point interpretation and licence restrictions are disclosed per method.
+The study is in progress. Only complete, checked participant/task results receive scores; pending methods remain unranked. The visible snapshot time identifies the current exported measurements. Each method shows its recorded inputs, point interpretation, pretraining and licence metadata. Missing licence metadata is marked as not recorded; incomplete pretraining disclosures remain unverified.
 
 ## Run the website
 
@@ -26,7 +26,7 @@ Open the repository prefix `/freshretailnet-intermittent-benchmark/` on the disp
 
 ## Update results
 
-After the local evaluator has validated a complete result, refresh the exported intermittent JSON, score CSV, protocol, paper and referenced figures in `public/`. Preserve the original-record snapshot and existing result receipts. Run `npm run build`, commit the updated public artifacts, then push to `main`. GitHub Actions builds and deploys the site automatically. The workflow can also be dispatched manually.
+After the local evaluator has validated a complete result, refresh the exported intermittent JSON, score CSV, protocol, paper, `public/downloads/foundation-admission.json` and referenced figures in `public/`. Keep the downloadable admission entries matched to the JSON snapshot's embedded `foundation_admission` records. Preserve the original-record snapshot and existing result receipts. Run `npm run build`, commit the updated public artifacts, then push to `main`. GitHub Actions builds and deploys the site automatically. The workflow can also be dispatched manually.
 
 ```sh
 git add public
