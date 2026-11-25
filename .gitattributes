@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Exported scientific artifacts retain their exact recorded bytes.
+public/** -text
+*.png binary
