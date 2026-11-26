@@ -1,6 +1,6 @@
 # FreshRetailNet-LT intermittent recorded-sales protocol
 
-Current protocol: **frn-intermittent-v2**. Participant campaign: **intermittent-six-month-v4**. Testing spans **January20–July20,2025**. This local study is active; no publication or outreach is in scope.
+Current protocol: **frn-intermittent-v2**. Participant campaign: **intermittent-six-month-v4**. Testing spans **January20–July20,2025**. This study is active; the public leaderboard is a rolling snapshot of verified results.
 
 ## Purpose and training fairness
 

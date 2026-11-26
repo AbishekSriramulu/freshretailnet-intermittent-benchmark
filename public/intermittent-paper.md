@@ -209,7 +209,7 @@ Only completed v2 tasks enter these tables. Native small checks, partial origins
 
 <!-- BEGIN MEASURED RESULTS -->
 
-Snapshot 2026-11-25T21:37:00.398314+00:00: **32 of 38** complete v2 participant/task results.
+Snapshot 2026-11-26T02:20:02.749078+00:00: **33 of 38** complete v2 participant/task results.
 
 ### Hourly H24
 
@@ -225,12 +225,13 @@ Snapshot 2026-11-25T21:37:00.398314+00:00: **32 of 38** complete v2 participant/
 | Chronos-2 | 0.731632 | 0.042860 |
 | t0-gamma | 0.736956 | 0.042360 |
 | t0-beta | 0.737560 | 0.042739 |
+| Timestral-209M | 0.741376 | 0.042475 |
 | Toto 2 · historical covariates | 0.748710 | 0.043211 |
 | TiRex 2 | 0.752685 | 0.044376 |
 | AutoNBEATSx | 0.782799 | 0.052359 |
 | AutoNHITS | 0.785052 | 0.052331 |
 
-Unscored participants for this task are AutoMFLES, Timestral-209M, CIProto, DWABI · all admitted foundation members, Sporacast v2 · CIProto + t0-gamma features.
+Unscored participants for this task are AutoMFLES, CIProto, DWABI · all admitted foundation members, Sporacast v2 · CIProto + t0-gamma features.
 
 ### Daily H7
 
