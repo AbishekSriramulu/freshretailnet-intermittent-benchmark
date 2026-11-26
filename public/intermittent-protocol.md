@@ -47,11 +47,13 @@ Daily covariates are source summaries, not24 independent hourly measurements. Re
 
 A realized daily summary is available after that source day finishes. Historical hourly slots before23:00 use the preceding completed daily summary; the final23:00–24:00 slot may include its now-completed day. Daily historical slots use completed-day measurements. Supervised examples align these channels to their own forecast issue. Recursive rollouts freeze past-only channels at the issue. Actual future weather/activity/stock never enters future covariates. No weather-forecast archive is supplied.
 
-There is no nominal selling-price series in this dataset. The supplied discount ratio is the price-related input. The frozen assumed plan retains every finite ratio, including0; carries preceding planned ratios across archive gaps; uses1 before the first ratio; and has unconditional availability1. It uses only the discount field. Every v2 foundation and fitted adapter uses this plan on future grids and internal validation grids, avoiding a future source-row-presence feature.
+There is no nominal selling-price series in this dataset. The supplied discount ratio is the price-related input. The frozen assumed plan retains every finite ratio, including0; carries preceding planned ratios across archive gaps; uses1 before the first ratio; and has unconditional availability1. It uses only the discount field. Adapters accepting known-future covariates use this plan on future grids and internal validation grids, avoiding a future source-row-presence feature. Toto2's historical-only interface does not receive future covariates.
 
 The plan is constructed retrospectively under the user's known-future-price assumption. It is not an independently archived issue-time schedule. Its file and receipt hashes remain pinned.
 
 Static numeric encodings use original recorded-sales category means strictly before January1,2024, with an early global fallback and daily means divided by24 for hourly inputs. No test outcomes enter this encoder. Native static/grouping APIs are used where supported. A model normalizing away constant channels is disclosed; supplying a channel is not proof of useful static-level conditioning.
+
+Input permissions are shared; feature matrices follow each method's native interface. Foundation inputs contain sales and covariate sequences, without additional engineered lag or rolling-statistic columns; numeric static means are supplied as constant channels. LightGBM uses explicit sales lags/rolling means, repeats the latest released past-only covariates across its forecast horizon, and uses the completed discount plan in historical feature frames. Foundation histories retain archived discount values with missingness flags. These implementation differences belong to the declared native recipes.
 
 ## Gaps and fitted models
 
