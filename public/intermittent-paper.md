@@ -197,7 +197,9 @@ At a shared midnight, availability precedes issuance through explicit two-phase 
 
 ### 7.2 Requested Sporacast forecast-feature extension
 
-The user subsequently requested one additional fitted participant using CIProto and t0-gamma zero-shot forecasts as predictors. The original Sporacast comparator is retained. This extension is disclosed as post-results design work; it does not alter the frozen original participant manifest or the eight-member DWABI roster. Source-level contract checks and full-cohort two-issue warm/cold qualifications have passed for both resolutions. These establish execution capability and bounded pilot resource measurements; extension accuracy and complete-bank runtime remain unmeasured.
+The user subsequently requested one additional fitted participant using CIProto and t0-gamma zero-shot forecasts as predictors. The original Sporacast comparator is retained. This extension is disclosed as post-results design work; it does not alter the frozen original participant manifest or the eight-member DWABI roster. Source-level contract checks and full-cohort two-issue warm/cold qualifications passed for both resolutions. The daily extension has now completed all 26 test origins; the hourly extension remains unfinished. A completed extension enters the results only after the common lineage and saved-case checks and the separate verification of its complete source bank and native feature-key audit.
+
+The complete daily bank contains 534 issues and 6,269,277 requested forecast keys per source. Its two source receipts have identical requested and used keys and input identities; the full bank seal has SHA-256 prefix `ec823c10`. The nine generation invocations recorded 81,357.13 seconds of summed controller wall time, including setup and checks within each invocation but excluding gaps between invocations. Source inference alone totals 46,644.53 seconds and is a subset of that work. The daily Sporacast consumer separately records 7,064.82 seconds of native fit/update and prediction work. Its bank-opening and completion checks are outside that native-work total. These timing scopes must not be treated as interchangeable or added when they overlap. The hourly source bank and its full cost remain incomplete.
 
 For the native Sporacast row indexed by historical tick t and one-based lead h, with step length Δ, define issue s=tick[t]+Δ and target interval [tick[t+h],tick[t+h]+Δ). Append each foundation source's native point and nine labelled deciles, all from that same parent, issue and lead. The twenty predictors augment the native feature matrix. Every quantile learner retains its own alpha and actual-sales training outcome; forecasts are not substituted as labels.
 
@@ -211,7 +213,7 @@ Only completed v2 tasks enter these tables. Native small checks, partial origins
 
 <!-- BEGIN MEASURED RESULTS -->
 
-Snapshot 2026-11-26T08:23:49.391352+00:00: **35 of 38** complete v2 participant/task results.
+Snapshot 2026-11-27T09:23:24.901395+00:00: **36 of 38** complete v2 participant/task results.
 
 ### Hourly H24
 
@@ -241,6 +243,7 @@ Unscored participants for this task are AutoMFLES, Sporacast v2 · CIProto + t0-
 
 | Method | RMSSE | CRPS-9 |
 |---|---:|---:|
+| Sporacast v2 · CIProto + t0-gamma features | 0.667365 | 0.333986 |
 | AutoMLForecast LightGBM · recursive | 0.669059 | 0.343087 |
 | Sporacast v2 | 0.673156 | 0.337193 |
 | AutoMLForecast LightGBM · Rectify | 0.673921 | 0.343745 |
@@ -260,7 +263,7 @@ Unscored participants for this task are AutoMFLES, Sporacast v2 · CIProto + t0-
 | Crossformer | 0.811416 | — (point only) |
 | AutoNHITS | 0.932252 | 0.494076 |
 
-Unscored participants for this task are Sporacast v2 · CIProto + t0-gamma features.
+Every roster entry for this task has a complete result.
 
 <!-- END MEASURED RESULTS -->
 
@@ -307,7 +310,7 @@ Public targets permit deliberate test fitting. Open experiment code, declared cu
 
 Native point actions, supported covariates, normalization and probability formats differ. Marginal quantile sums are not used to fabricate aggregate quantiles. CRPS-9 uses finitely many quantiles and differs in level sensitivity from RMSSE. No grand rank combines repeated frequency views of one dataset.
 
-Timings are local operational observations under concurrent workloads. The report records each timing basis and scope. Foundation timings sum the measured origin phase after model setup and before final scoring. AutoMFLES reports pre-test selection separately from the per-origin fit and issuance total. Sporacast reports native fit, update and prediction measurements separately. The three LightGBM strategy intervals overlap within one shared task process. Summing them double-counts that process, and strategy-level attribution is unavailable. The benchmark does not establish controlled efficiency differences.
+Timings are local operational observations under concurrent workloads. The report records each timing basis and scope. Foundation timings sum the measured origin phase after model setup and before final scoring. AutoMFLES reports pre-test selection separately from the per-origin fit and issuance total. Sporacast reports native fit, update and prediction measurements separately. For the forecast-feature extension, that native-work total excludes the additional historical foundation-forecast generation and bank verification; their separate resource receipts are retained in its provenance. The three LightGBM strategy intervals overlap within one shared task process. Summing them double-counts that process, and strategy-level attribution is unavailable. The benchmark does not establish controlled efficiency differences.
 
 ## Appendix A. Worked evaluation examples
 
